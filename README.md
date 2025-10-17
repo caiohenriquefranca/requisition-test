@@ -1,23 +1,23 @@
-# 🧪 Teste de Carga via Console do Navegador
+#  Teste de Carga via Console do Navegador
 
 Este script permite realizar **testes de carga simples** diretamente pelo **console do navegador**, sem precisar de ferramentas externas.  
 Ele dispara várias requisições HTTP em paralelo para a página atual, mede tempos de resposta e exibe estatísticas no console.
 
 ---
 
-## 🚀 Como usar
+##  Como usar
 
-### 1️⃣ Abra a página que deseja testar
+### 1 - Abra a página que deseja testar
 
 - Vá até o site ou rota que você quer medir o desempenho (precisa estar autenticado se for um endpoint protegido).
 
-### 2️⃣ Abra o Console do Navegador
+### 2 - Abra o Console do Navegador
 
 - Atalho:
   - **Windows/Linux:** `Ctrl + Shift + J`
   - **macOS:** `Cmd + Option + J`
 
-### 3️⃣ Cole o código completo
+### 3 - Cole o código completo
 
 Cole o script abaixo no console e pressione **Enter**:
 
@@ -27,11 +27,11 @@ Cole o script abaixo no console e pressione **Enter**:
 })();
 ```
 
-> 💡 Dica: Certifique-se de copiar todo o código de forma completa, sem cortes.
+>  Dica: Certifique-se de copiar todo o código de forma completa, sem cortes.
 
 ---
 
-## ⚙️ Configurações principais
+##  Configurações principais
 
 No topo do script, você pode ajustar os seguintes parâmetros:
 
@@ -50,7 +50,7 @@ const timeoutMs = 20000; // tempo máximo de espera (ms)
 
 ---
 
-## 🔑 Autenticação automática
+## Autenticação automática
 
 O script tenta **detectar automaticamente tokens** de autenticação:
 
@@ -71,11 +71,11 @@ Authorization: Bearer <token>
 
 ---
 
-## 📊 Resultado e estatísticas
+##  Resultado e estatísticas
 
 Ao finalizar, o console exibirá:
 
-### ✅ Resumo principal
+###  Resumo principal
 
 Uma tabela parecida com isto:
 
@@ -94,7 +94,7 @@ Uma tabela parecida com isto:
 └───────────────┴────────────┘
 ```
 
-### 📋 Detalhes individuais
+###  Detalhes individuais
 
 Também é mostrado um array com os primeiros resultados:
 
@@ -104,7 +104,7 @@ Detalhes (primeiros 200 registros): [ { seq: 1, workerId: 1, status: 200, time: 
 
 ---
 
-## 🔍 Inspecionar dados manualmente
+##  Inspecionar dados manualmente
 
 Após a execução, os resultados ficam disponíveis em variáveis globais:
 
@@ -127,7 +127,7 @@ copy(JSON.stringify(window.__f5_test_results, null, 2));
 
 ---
 
-## 💡 Dicas de uso
+##  Dicas de uso
 
 - Ideal para **testes rápidos de performance de API ou frontend** autenticado.
 - Execute em **ambiente de staging ou homologação**, **nunca** em produção.
@@ -136,8 +136,7 @@ copy(JSON.stringify(window.__f5_test_results, null, 2));
 
 ---
 
-## ⚠️ Aviso
+##  Aviso
 
 Este script é apenas para **testes controlados**.
-# requisition-test
-# requisition-test
+
